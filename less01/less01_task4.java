@@ -1,14 +1,14 @@
 package com.epam.jb.less01;
 
-public class Triang {
+public class less01_task4 {
 public static void main(String[] args) {
-double a, b; // два катета
-double c = 0; // гипотенуза
-double s; // площадь
+double a, b; // Г¤ГўГ  ГЄГ ГІГҐГІГ 
+double c = 0; // ГЈГЁГЇГ®ГІГҐГ­ГіГ§Г 
+double s; // ГЇГ«Г®Г№Г Г¤Гј
 a = 7;
 b = 9;
 c = Math.sqrt(a * a + b * b);
 s = 0.5 * a * b;
-System.out.println("Гипотенуза = " + c + " площадь = " + s);
+System.out.println("ГѓГЁГЇГ®ГІГҐГ­ГіГ§Г  = " + c + " ГЇГ«Г®Г№Г Г¤Гј = " + s);
 }
 }
