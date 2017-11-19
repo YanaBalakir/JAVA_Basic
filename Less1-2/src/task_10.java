@@ -12,11 +12,11 @@ public static void main (String []args) {
 	
 	if (x <= -3) {
 		f = 9;
-		System.out.println("Значение функции = " +f);
+		System.out.println("F(x) = " +f);
 	} 
 	else if (x > 3) {
 	f = 1/(x*x+1);
-	System.out.println("Значение функции = " +f);
+	System.out.println("F(x) = " +f);
 }
 }
 }
