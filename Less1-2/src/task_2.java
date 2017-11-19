@@ -3,40 +3,40 @@ import java.util.Scanner;
 public class task_2 {
 	public static void main(String[] args) {
 	Scanner scan = new Scanner (System.in);	
-	System.out.println("Введите количество цифр");//размер массива
+	System.out.println("Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ");//Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°
 	int count = scan.nextInt();
 	int i = 0; 
 	int[] array = new int [count];
-	System.out.println("Введите цифры"); //значения массива 
+	System.out.println("Р’РІРµРґРёС‚Рµ С†РёС„СЂС‹"); //Р—РЅР°С‡РµРЅРёСЏ РјР°СЃСЃРёРІР°
 	for (i = 0; i < count; i++ ) {
 		array [i] = scan.nextInt();
 	}
 		
-	int chet = 0; //четные числа
+	int chet = 0; //Р§РµС‚РЅС‹Рµ С‡РёСЃР»Р°
 	
 	for (i = 0; i < count; i++) {
 		if (array [i]%2 == 0) {
 			chet++;
 		}
-	System.out.println("Четных цифр:" + chet);
+	System.out.println("Р§РµС‚РЅС‹С… С‡РёСЃРµР»:" + chet);
 		
-	int sum = 0; //сумма кратных трем 
+	int sum = 0; //РЎСѓРјРјР° РєСЂР°С‚РЅС‹С… С‚СЂРµРј 
 	
 	for (i = 0; i < count; i++) {
 		if (array [i]%3 == 0) {
 			sum = sum + array [i];
 		}
 	}
-	System.out.println("Сумма цифр кратных трем:" + sum);
+	System.out.println("РЎСѓРјРјР° РєСЂР°С‚РЅС‹С… С‚СЂРµРј:" + sum);
 	
-	int mod3 = 0; // модуль <3
+	int mod3 = 0; // РњРѕРґСѓР»СЊ <3
 	
 	for (i = 0; i < count; i++)	{
 		if (Math.abs(array [i]) < 3);{
 			mod3++;
 		}
 	}
-	System.out.println("Количество цифр, модуль которых <3:" + mod3);
+	System.out.println("РљРѕР»РёС‡РµС‚СЃРІРѕ С‡РёСЃРµР», РјРѕРґСѓР»СЊ РєРѕС‚РѕСЂС‹С… <3:" + mod3);
 
 		}
 	}
