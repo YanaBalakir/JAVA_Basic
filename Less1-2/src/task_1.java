@@ -4,17 +4,17 @@ public class task_1 {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Введите a");
-		System.out.println("Введите b");
+		System.out.println("Р’РІРµРґРёС‚Рµ a");
+		System.out.println("Р’РІРµРґРёС‚Рµ b");
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 
 		if (a == b) {
-			System.out.println("Скоро Новый Год!");
+			System.out.println("РЎРєРѕСЂРѕ РќРѕРІС‹Р№ Р“РѕРґ!");
 		} 
 		
 		else {
-			System.out.println("Введите c");
+			System.out.println("Р’РІРµРґРёС‚Рµ c");
 		}
 		int c = scan.nextInt();
 		int sum = a + b + c;
@@ -22,7 +22,7 @@ public class task_1 {
 
 		System.out.println(sum);
 		System.out.println(kv);
-		System.out.println("Моя любимая футбольная команда");
+		System.out.println("РњРѕСЏ Р»СЋР±РёРјР°СЏ С„СѓС‚Р±РѕР»СЊРЅР°СЏ РєРѕРјР°РЅРґР°");
 
 	}
 }
