@@ -8,7 +8,7 @@ public class task_9 {
 		double C = 2 * Math.PI * R;
 		double S = Math.PI * R * R;
 
-		System.out.println("Длина окружности:" + C);
-		System.out.println("Площадь круга:" + S);
+		System.out.println("Р”Р»РёРЅР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё:" + C);
+		System.out.println("РџР»РѕС‰Р°РґСЊ РєСЂСѓРіР°:" + S);
 	}
 }
