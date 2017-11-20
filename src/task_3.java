@@ -4,24 +4,24 @@ import java.util.Random;
 public class task_3 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter count of numbers");// размер массива
+		System.out.println("Enter count of numbers");// СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°
 		int n = scan.nextInt();
 		int i = 0;
 
-		// массив вещественных чисел
+		// Р·РЅР°С‡РµРЅРёСЏ РјР°СЃСЃРёРІР°
 		double[] array = new double[n];
 		Random rand = new Random();
 		for (i = 0; i < n; i++) {
 			array[i] = rand.nextDouble();
 			System.out.println("Real number :" + array[i] + "");
 
-		// усекаем вещественные числа
+		// СѓСЃРµРєР°РµРј Р·РЅР°С‡РµРЅРёСЏ РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР»
 			array[i] *= 100;
 			array[i] = (int) array[i];
 			System.out.println("Integer : " + array[i] + "");
 		}
 
-		// количество четных чисел
+		// РєРѕР»РёС‡РµС‚СЃРІРѕ С‡РµС‚РЅС‹С… С‡РёСЃРµР»
 
 		int a = 0;
 		for (i = 0; i < n; i++) {
@@ -32,7 +32,7 @@ public class task_3 {
 
 		System.out.println("Total - even numbers : " + a);
 
-		// кол - во чисел > 15
+		// РєРѕР»РёС‡РµС‚СЃРІРѕ С‡РёСЃРµР» > 15
 
 		int b = 0;
 		for (i = 0; i < n; i++) {
