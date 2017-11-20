@@ -12,7 +12,7 @@ public class task_2 {
 			array[i] = scan.nextInt();
 		}
 
-		int chet = 0; 
+		int chet = 0; // cetnye
 
 		for (i = 0; i < count; i++) {
 			if (array[i] % 2 == 0) {
@@ -20,7 +20,7 @@ public class task_2 {
 			}
 			System.out.println("Chetnyh:" + chet);
 
-			int sum = 0; 
+			int sum = 0; // summa kratnyh 3
 
 			for (i = 0; i < count; i++) {
 				if (array[i] % 3 == 0) {
@@ -29,7 +29,7 @@ public class task_2 {
 			}
 			System.out.println("Summa kratnyh trem" + sum);
 
-			int mod3 = 0; // модуль <3
+			int mod3 = 0; // Modul <3
 
 			for (i = 0; i < count; i++) {
 				if (Math.abs(array[i]) < 3)
