@@ -3,30 +3,30 @@ import java.util.Scanner;
 public class task_4 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Введите количество чисел");// размер массива
+		System.out.println("Enter n");// РєРѕР»РёС‡РµС‚СЃРІРѕ С‡РёСЃРµР» = СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°
 		int n = scan.nextInt();
 		int i = 0;
 		int[] array = new int[n];
-		System.out.println("Введите числа"); // значения массива
+		System.out.println("Enter numbers"); // СЌР»РµРјРµРЅС‹ РјР°СЃСЃРёРІР°
 		for (i = 0; i < n; i++) {
 			array[i] = scan.nextInt();
 		}
 
-		int a = 0; // кол-во чисел > 15 или < 2
-		int sum = 0; // сумма чисел, которые делятся на 5 с остатком 4
+		int a = 0; // С‡РёСЃР»Р° > 15 Рё < 2
+		int sum = 0; // СЃСѓРјРјР° С‡РёСЃРµР», РєРѕС‚РѕСЂС‹Рµ РґРµР»СЏС‚СЃСЏ РЅР° 5 СЃ РѕСЃС‚Р°С‚РєРѕРј 4
 
 		for (i = 0; i < n; i++) {
 			if ((array[i] > 15) || (array[i] < 2))
 				a++;
 		}
 
-		System.out.println("кол-во чисел > 15 или < 2:" + a);
+		System.out.println("РљРѕР»РёС‡РµС‚СЃРІРѕ С‡РёСЃРµР» > 15 Рё < 2:" + a);
 
 		for (i = 0; i < n; i++) {
 			if (array[i] % 5 == 4)
 				;
 			sum = sum + array[i];
 		}
-		System.out.println("сумма чисел, которые делятся на 5 с остатком 4:" + sum);
+		System.out.println("РЎСѓРјРјР° С‡РёСЃРµР», РєРѕС‚РѕСЂС‹Рµ РґРµР»СЏС‚СЃСЏ РЅР° 5 СЃ РѕСЃС‚Р°С‚РєРѕРј 4:" + sum);
 	}
 }
