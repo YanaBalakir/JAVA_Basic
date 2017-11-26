@@ -28,14 +28,14 @@ public class task_2_2 {
 
 	}
 
-	int summa(int a, int b) {
+	public int summa(int a, int b) {
 
 		int x;
 		return x = a + b;
 
 	}
 
-	int proizvedenie(int a, int b) {
+	public int proizvedenie(int a, int b) {
 		int y;
 		return y = a * b;
 	}
