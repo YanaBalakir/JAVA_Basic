@@ -4,6 +4,8 @@ package Figures;
 public class Main {
     public static void main(String[] args) {
 
+        // TODO: DK: Можно добавить немного логирования. Сейчас послезапуска выводится куча цифр на экране. Можно было добавить что-то типо "Площади неотсортированных фигур. и т.д"
+
         Rectangle rectangle1 = new Rectangle(5.7, 8.5);
         Rectangle rectangle2 = new Rectangle (3.7, 4.2);
         Square square1 = new Square(11.2);
@@ -22,7 +24,7 @@ public class Main {
         list.add(circle2);
 
         list.printArea();
-
         list.sortArea();
+        // TODO: DK: пропущены пункты a) c) из таска.
     }
 }
