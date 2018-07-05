@@ -6,6 +6,7 @@ public class Event {
     private int id;
     private String eventName;
     private String eventDescription;
+    // TODO: DK: Скорее всего это поле 'eventPlace' скорее всего будет выбираться из определённого набора концертных залов, для этой цели бывает удобно использовать тип Enum.
     private String eventPlace;
     private Date eventDate;
     private List<Ticket> tickets = new ArrayList<Ticket>();
@@ -57,5 +58,8 @@ public class Event {
     public void setTickets(List<Ticket> tickets) {
         this.tickets = tickets;
     }
+
+    // TODO: DK: В таких классах обычно переопределют equals() и hashcode()
+
 
 }

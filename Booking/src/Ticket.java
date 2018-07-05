@@ -1,6 +1,10 @@
 public class Ticket {
+    // TODO: DK: Лучше давать имена пакетам , а не делать в дефолтном пакете , например "com.epam.mentoring.booking"
+
     private int eventId;
     private int placeNumber;
+
+    //TODO: DK: Цену тоже можно было добавить в конструктор (одинаковая цена имелось ввиду в рамкам одного ивента, для разных ивентов может быть разная).
     private int cost = 100;
     private boolean isBought;
 
@@ -36,4 +40,5 @@ public class Ticket {
         isBought = bought;
     }
 
+    // TODO: DK: В таких классах обычно переопределют equals() и hashcode()
     }
