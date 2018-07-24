@@ -1,10 +1,11 @@
 package com.epam.mentoring.task1;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class FigureUnit {
 
-    public static boolean CompareWithNumb(, double x) { //как правильно передать список в качестве аргумента в метод
+    public static boolean CompareWithNumb(List<Figure> list, double x) { //как правильно передать список в качестве аргумента в метод
         double squareSum = 0;
         if (squareSum > x) {
             return true;
@@ -12,14 +13,17 @@ public class FigureUnit {
             return false;
         } else {
             System.out.println("Number and SquareSum are equals");
-
         }
-
+return false;
     }
 
-    public static double findSquareSum(){
-        double  squareSum = 0;
-        for(int i = 0; i < array.size(); i++) {
+    public static double findSquareSum() {
+        double squareSum = 0;
+        /*
+        for (int i = 0; i < array.size(); i++) {
             squareSum += array.get(i).square;
+        }
+        */
+        return 0.0;
     }
 }

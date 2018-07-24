@@ -10,9 +10,10 @@ public class Main {
 
         ArrayList<Figure> figureList = new ArrayList<>();
 
-        figureList.add(factory.createFigure("Circle"));
+        figureList.add(factory.createFigure(Type.Rectangle));
         figureList.add(factory.createFigure("Rectangle"));
         figureList.add(factory.createFigure("Square"));
+        figureList.add(factory.createFigure("dsds"));
         // добавить try ...catch если тип фигуры другой или можно в методе createFigure прописать trows
 
 
@@ -23,7 +24,7 @@ public class Main {
 
         Collections.sort(figureList);
         for (Figure f : figureList) {
-            System.out.println(f.getSquar());
+            //System.out.println(f.getSquar());
         }
 
 
