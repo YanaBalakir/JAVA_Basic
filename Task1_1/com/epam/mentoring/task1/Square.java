@@ -18,8 +18,13 @@ public class Square extends Figure {
     }
 
 
-    @Override
+  //  @Override
     public double getSquar() {
         return this.squareSide * this.squareSide;
+    }
+
+    @Override
+    public double getSquare() {
+        return 0;
     }
 }
