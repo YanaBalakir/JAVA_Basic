@@ -10,6 +10,7 @@ public class FigureFactory {
             case SQUARE:
                 return new Square(Math.random() * 3);
             default:
+                // TODO: Можно вместо возврата NULL бросвть эксепшн (например создать свой кастомный).
                 System.out.println("The figure don't exist");
                 return null;
         }
