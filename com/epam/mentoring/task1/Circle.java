@@ -17,6 +17,7 @@ public class Circle extends Figure {
     }
 
     @Override
+    // TODO: this в этоом случае необязательно писать (но это не ошибка). Есть ещё метод Math.pow() для возведения в степень.
     public double getSquare() {
         return Math.PI * (this.radius * this.radius);
     }
