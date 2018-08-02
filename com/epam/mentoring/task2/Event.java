@@ -10,14 +10,19 @@ public class Event {
     private int id;
     private String eventName;
     private String eventDescription;
-    private String eventPlace;
-
-    /*enum EventPlace {
-        PLACE1, PLACE2, PLACE3
-    }*/
-
     private Date eventDate;
+    private EventPlace place;
     private List<Ticket> tickets = new ArrayList<Ticket>();
+
+    public Event(int id, String eventName, String eventDescription, Date eventDate, EventPlace place, List<Ticket> tickets) {
+        this.id = id;
+        this.eventName = eventName;
+        this.eventDescription = eventDescription;
+        this.eventDate = eventDate;
+        this.place = place;
+        this.tickets = tickets;
+    }
+
 
     public int getId() {
         return id;
@@ -43,12 +48,12 @@ public class Event {
         this.eventDescription = eventDescription;
     }
 
-    public String getEventPlace() {
-        return eventPlace;
+    public EventPlace getPlace() {
+        return place;
     }
 
-    public void setEventPlace(String eventPlace) {
-        this.eventPlace = eventPlace;
+    public void setEventPlace(EventPlace place) {
+        this.place = place;
     }
 
 
@@ -86,4 +91,8 @@ public class Event {
         return Objects.hash(getId(), getEventName(), getEventDescription(), getEventDate(), getTickets());
     }
 
+}
+
+enum EventPlace {
+    PALACE, MINSKARENA, DINAMO
 }
