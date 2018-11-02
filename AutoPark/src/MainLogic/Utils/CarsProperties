@@ -1,0 +1,26 @@
+id1 = 001
+brand1 = Mazda
+model1 = 6
+fuelConsumption1 = 9
+price1 = 5000
+location1 = Minsk
+maxPassengers1 = 5
+maxCarryWeight1 = 100
+
+id2 = 002
+brand2 = Opel
+model2 = Corsa
+fuelConsumption2 = 7
+price2 = 10000
+location2 = Minsk
+maxPassengers2 = 5
+maxCarryWeight2 = 100
+
+id3 = 003
+brand3 = MAZ
+model3 = 33
+fuelConsumption3 = 15
+price3 = 15000
+location3 = Vitebsk
+maxPassengers3 = 2
+maxCarryWeight3 = 1000
