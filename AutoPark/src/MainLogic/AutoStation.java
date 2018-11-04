@@ -22,6 +22,20 @@ public class AutoStation {
         return stationPrice;
     }
 
+    //find cars by price range
+    public void showCarsByPrice(double lowerPrice,
+                                          double upperPrice) {
+        double price;
+
+        System.out.println("Cars for Price range ["
+                + lowerPrice + ", " + upperPrice + "]");
+        for (Car car : carsList) {
+            price = car.getPrice();
+            if (price >= lowerPrice && price <= upperPrice) {
+                System.out.println(car.getId() + ", "
+                        + car.getBrand() + ","+ car.getPrice);
+            }
+            
    //getter, setter
 
     public void setCarsList(List<Car> carsList) {
