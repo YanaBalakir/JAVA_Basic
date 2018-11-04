@@ -31,10 +31,12 @@ public class Main {
         autoStation1.getCarsList().sort(Comparator.comparing(Car::getFuelConsumption));
 
         //search by range of the parameters
+autoStation1.showCarsByPrice(3000,10000);
 
-// read from  Properties File
-        CarsPropertiesReader fileReader = new CarsPropertiesReader();
-        fileReader.getCarsProperties();
+// get car's location from properties file
+
+
+        CarsPropertiesReader.getLocation(2);
 
         }
     }
